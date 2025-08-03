@@ -1,8 +1,9 @@
 'use client';
+import Container from '@/app/components/container';
 
 export default function Hero() {
   return (
-    <div className="container max-w-5xl mx-auto p-12 bg-white/5 border border-white/5">
+    <Container>
       <div className="grid grid-flow-row auto-rows-max gap-7">
         <div className="col-span-8">
           <h1 className="text-5xl font-bold">UI/UX Designer,<br/> Icon Designer, and Founder.</h1>
@@ -21,6 +22,6 @@ export default function Hero() {
           </ul>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
