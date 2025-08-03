@@ -4,6 +4,7 @@ import Project from '@/app/pages/project';
 import Articles from '@/app/pages/articles';
 import Update from '@/app/pages/home/update';
 import Work from '@/app/pages/home/work';
+import Footer from '@/app/components/footer';
 
 import Container from './components/container';
 
@@ -24,6 +25,7 @@ export default function Home() {
           </div>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 }
