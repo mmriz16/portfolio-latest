@@ -1,18 +1,20 @@
 import Hero from '@/app/pages/home/hero';
-import Available from '@/app/components/available';
+import Photos from '@/app/pages/home/photos';
 import Project from '@/app/pages/project';
 import Articles from '@/app/pages/articles';
 import Update from '@/app/pages/home/update';
 import Work from '@/app/pages/home/work';
 import Footer from '@/app/components/footer';
+import Navbar from '@/app/components/navbar';
 
 import Container from './components/container';
 
 export default function Home() {
   return (
     <div>
-      <Available />
+      <Navbar />
       <Hero />
+      <Photos />
       <Project />
       <Container>
         <div className="grid grid-cols-12 gap-4">

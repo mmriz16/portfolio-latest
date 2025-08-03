@@ -4,7 +4,7 @@ import Container from '@/app/components/container';
 export default function Hero() {
   return (
     <Container>
-      <div className="grid grid-flow-row auto-rows-max gap-7 px-6">
+      <div className="grid grid-flow-row auto-rows-max gap-7 px-6 mt-24">
         <div className="col-span-8">
           <h1 id='title' className="text-5xl font-bold leading-[1.1]">UI/UX Designer,<br/> Icon Designer, and Founder.</h1>
         </div>
