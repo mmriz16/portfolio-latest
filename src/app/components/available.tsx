@@ -4,7 +4,7 @@ import Container from '@/app/components/container';
 export default function Available() {
   return (
     <Container>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between px-6">
         <div className="col-10">
           <div className="grid grid-cols-12 gap-7">
             <div className="col-span-5">
