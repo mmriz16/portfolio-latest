@@ -13,7 +13,7 @@ export default function Available() {
             </div>
             <div className="col-span-4">
               <h1 className="text-base">Building</h1>
-              <a className='text-base text-white/50' href="https://aghatis.vercel.app/" target="_blank" rel="noopener noreferrer"><i className="bx bx-arrow-up-right-stroke"></i>PT Aghatis Karya Indonesia</a>
+              <a className='text-base text-white/50' href="https://aghatis.vercel.app/" target="_blank" rel="noopener noreferrer">PT Aghatis Karya Indonesia</a>
             </div>
           </div>
         </div>
