@@ -15,10 +15,10 @@ export default function Home() {
       <Project />
       <Container>
         <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-7 w-full">
+          <div className="col-span-6 w-full h-full">
             <Articles />
           </div>
-          <div className="col-span-5 gap-4 w-full flex flex-col pr-6">
+          <div className="col-span-6 gap-4 w-full flex flex-col pr-6">
             <Update />
             <Work />
           </div>
