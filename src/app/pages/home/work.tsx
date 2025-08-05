@@ -19,7 +19,7 @@ export default function Work() {
             <h1 className="text-white font-semibold">UI/UX Designer</h1>
             <p className="text-white/50 text-sm">PT Aghatis Karya Indonesia</p>
           </div>
-          <div className="col-span-4 col-start-8 text-end text-xs text-white/30">Dec 2021 - Sep 2022</div>
+          <div className="col-span-4 col-start-8 text-end text-xs text-white/30">Dec 2021 - Aug 2023</div>
         </div>
         <div className="grid grid-cols-10 grid-rows-1 gap-4 items-center">
           <div className="col-span-2 w-[65px] h-[65px] rounded-full bg-white/10"></div>
