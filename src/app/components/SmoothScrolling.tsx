@@ -10,10 +10,9 @@ export default function SmoothScrolling() {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       orientation: 'vertical',
-      direction: 'vertical',
-      smooth: true,
-      mouseMultiplier: 1,
-      smoothTouch: false,
+      smoothWheel: true,
+      wheelMultiplier: 1,
+      // touchInertiaMultiplier is not a valid option, removing it
       touchMultiplier: 2,
       infinite: false,
     });
