@@ -3,7 +3,10 @@
 export default function Work() {
   return (
     <div className="p-6 border border-white/10 rounded-xl gap-6 flex flex-col">
-      <h1 className="text-white font-semibold">Work Experience</h1>
+      <div className="flex justify-between items-center">
+        <h1 className="text-white font-semibold">Work Experience</h1>
+        <div className="col-span-4 col-start-8 text-end text-xs text-white/30">5 Years 3 Month</div>
+      </div>
       <div className="list gap-3 flex flex-col">
         <div className="grid grid-cols-10 grid-rows-1 gap-4 items-center">
           <div className="col-span-2 w-[65px] h-[65px] rounded-full bg-white/10"></div>
