@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 export default function Work() {
   return (
@@ -10,7 +11,7 @@ export default function Work() {
       <div className="list gap-3 flex flex-col">
         <div className="grid grid-cols-10 grid-rows-1 gap-4 items-center">
           <div className="col-span-2 w-[65px] h-[65px] rounded-full flex items-center justify-center bg-white/10">
-            <img src="/img/Siesta.png" alt="Company logo" width={55} height={55} />
+            <Image src="/img/Siesta.png" alt="Company logo" width={55} height={55} />
           </div>
           <div className="col-span-5">
             <h1 className="text-white font-semibold">UI/UX Designer</h1>
@@ -20,7 +21,7 @@ export default function Work() {
         </div>
         <div className="grid grid-cols-10 grid-rows-1 gap-4 items-center">
           <div className="col-span-2 w-[65px] h-[65px] rounded-full flex items-center justify-center bg-white/10">
-            <img src="/img/Aghatis.png" alt="Company logo" width={55} height={55} />
+            <Image src="/img/Aghatis.png" alt="Company logo" width={55} height={55} />
           </div>
           <div className="col-span-5">
             <h1 className="text-white font-semibold">UI/UX Designer</h1>
@@ -30,7 +31,7 @@ export default function Work() {
         </div>
         <div className="grid grid-cols-10 grid-rows-1 gap-4 items-center">
           <div className="col-span-2 w-[65px] h-[65px] rounded-full flex items-center justify-center bg-white/10">
-            <img src="/img/DGT.png" alt="Company logo" width={55} height={55} />
+            <Image src="/img/DGT.png" alt="Company logo" width={55} height={55} />
           </div>
           <div className="col-span-5">
             <h1 className="text-white font-semibold">Graphic Design & UI/UX Designer</h1>

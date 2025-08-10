@@ -14,6 +14,24 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
+    ignores: [
+      'node_modules/',
+      '.next/',
+      'out/',
+      'dist/',
+      'build/',
+      '.env*',
+      '*.log',
+      'coverage/',
+      '.vscode/',
+      '.idea/',
+      '*.swp',
+      '*.swo',
+      '.DS_Store',
+      'Thumbs.db'
+    ]
+  },
+  {
     rules: {
       // Enforce consistent spacing and formatting
       'indent': ['error', 2],
