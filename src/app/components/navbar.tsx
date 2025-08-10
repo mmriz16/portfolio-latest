@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="p-1 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl">
         <Link href="/"><Image className="rounded-lg" width={48} height={48} src="/img/profile.jpg" alt="profile" /></Link>
       </div>
-      <div className="p-4 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl flex justify-center">
+      <div className="p-4 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl hidden md:flex justify-center">
         <ul className="flex gap-4 text-sm items-center text-white/50">
           <li className="hover:text-white"><Link href="/pages/about">About</Link></li>
           <li className="hover:text-white"><Link href="/pages/articles/list">Article</Link></li>
