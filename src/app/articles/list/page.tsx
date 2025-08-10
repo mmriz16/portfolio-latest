@@ -1,8 +1,8 @@
 'use client';
 
-import Container from '../components/container';
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Container from '../../components/container';
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
 
 export default function Articles() {
   return (
