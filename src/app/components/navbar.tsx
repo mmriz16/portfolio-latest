@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="container w-full max-w-5xl mx-auto px-12 fixed top-5 left-1/2 -translate-x-1/2 flex justify-between">
-      <div className="p-1 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl">
-        <Link href="/"><Image className="rounded-lg" width={48} height={48} src="/img/profile.jpg" alt="profile" /></Link>
+    <div className="container w-full max-w-5xl mx-auto px-6 md:px-12 fixed top-5 left-1/2 -translate-x-1/2 flex justify-between">
+      <div className="p-1 rounded-xl bg-black/10 w-fit h-fit border border-white/10 backdrop-blur-xl">
+        <Link href="/"><Image className="rounded-lg" width={46} height={46} src="/img/profile.jpg" alt="profile" /></Link>
       </div>
       <div className="p-4 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl hidden md:flex justify-center">
         <ul className="flex gap-4 text-sm items-center text-white/50">
@@ -18,7 +18,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="p-1 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl">
-        <div className="card w-[48px] h-[48px]"></div>
+        <div className="card w-[46px] h-[46px]"></div>
       </div>
     </div>
   );

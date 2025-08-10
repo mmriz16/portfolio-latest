@@ -10,10 +10,10 @@ export default function Articles() {
       <Navbar />
       <Container>
         <div className="flex flex-col gap-7 px-6 mt-24 mb-12">
-          <div className="w-[650px]">
+          <div className="w-full max-w-[650px]">
             <h1 id='title' className="text-5xl font-bold leading-[1.1]">Writing on software design, company building, and the aerospace industry.</h1>
           </div>
-          <div className="w-[650px]">
+          <div className="w-full max-w-[650px]">
             <p id='desc' className="text-base font-medium text-white/50">All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.</p>
           </div>
         </div>

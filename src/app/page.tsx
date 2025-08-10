@@ -17,11 +17,11 @@ export default function Home() {
       <Photos />
       <Project />
       <Container>
-        <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-6 w-full h-full">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+          <div className="col-span-1 md:col-span-6 w-full h-full">
             <Articles />
           </div>
-          <div className="col-span-6 gap-4 w-full flex flex-col pr-6">
+          <div className="col-span-1 md:col-span-6 gap-4 w-full flex flex-col md:pr-6 pr-0">
             <Update />
             <Work />
           </div>
