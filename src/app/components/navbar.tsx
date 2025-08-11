@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className="container w-full max-w-5xl mx-auto px-4 md:px-12 fixed top-5 left-1/2 -translate-x-1/2 flex justify-between">
+    <div className="container w-full  lg:max-w-3xl xl:max-w-5xl mx-auto px-4 md:px-12 fixed top-5 left-1/2 -translate-x-1/2 flex justify-between">
       <div className="p-1 rounded-xl bg-black/10 w-fit h-fit border border-white/10 backdrop-blur-xl">
         <Link href="/"><Image className="rounded-lg" width={46} height={46} src="/img/profile.jpg" alt="profile" /></Link>
       </div>
