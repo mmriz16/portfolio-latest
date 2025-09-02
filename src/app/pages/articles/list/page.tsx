@@ -22,7 +22,7 @@ export default function Articles() {
             <div className="basis-1/6 px-5 py-4">
               <p className="text-sm text-white/30">August 03, 2025</p>
             </div>
-            <a href='/articles/detail' className="basis-4/6">
+            <a href='/pages/articles/detail' className="basis-4/6">
               <div className="card hover:bg-white/5 px-5 py-4 rounded-xl gap-2 flex flex-col">
                 <h1 className="text-base font-semibold">Crafting a design system for a multiplanetary future</h1>
                 <p className="text-sm leading-[1.6] overflow-ellipsis line-clamp-3 text-white/50">In the ever-evolving landscape of technology, the need for a robust design system that can adapt to the multiplanetary future is more critical than ever. A design system that is flexible, scalable, and efficient can help organizations create seamless user experiences across different platforms and devices.</p>

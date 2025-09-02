@@ -17,8 +17,13 @@ export default function Navbar() {
           <li className="hover:text-white"><Link href="/pages/uses">Uses</Link></li>
         </ul>
       </div>
-      <div className="p-1 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl">
-        <div className="card w-[46px] h-[46px]"></div>
+      <div className="flex gap-3">
+        <div className="Menu flex items-center justify-center px-4 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl md:hidden">
+          <div className="card w-fit">Menu</div>
+        </div>
+        <div className="p-1 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl">
+          <div className="card w-[46px] h-[46px]"></div>
+        </div>
       </div>
     </div>
   );
