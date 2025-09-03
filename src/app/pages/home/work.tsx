@@ -58,7 +58,7 @@ export default function Work() {
           <div className="col-span-4 col-start-9 text-end text-xs text-white/30">Aug 2019 - Jan 2020</div>
         </div>
       </div>
-      <button className="text-xs py-4 bg-white/10 w-full text-white font-semibold rounded-xl">Download Resume</button>
+      <a href="https://drive.usercontent.google.com/download?id=1tVqFRQ9YBrp20cSlxNlMzl3CNGKg9WT9&export=download&authuser=0&confirm=t&uuid=8a8cfeaa-38f9-4b97-8de5-5ba4287ebf74&at=AN8xHoop83HufVUBdKQAZnf65EiG:1756906123576" ><button className="text-xs py-4 bg-white/10 w-full text-white font-semibold rounded-xl cursor-default hover:cursor-pointer">Download Resume</button></a>
     </div>
   );
 }

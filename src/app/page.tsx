@@ -15,15 +15,17 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Photos />
-      <Project />
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-          <div className="col-span-1 md:col-span-6 w-full h-full">
-            <Articles />
-          </div>
-          <div className="col-span-1 md:col-span-6 gap-4 w-full flex flex-col md:pr-6 pr-0">
-            <Update />
-            <Work />
+        <div className="grid grid-cols-1 gap-4">
+          <Project />
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            <div className="col-span-1 md:col-span-6 w-full h-full">
+              <Articles />
+            </div>
+            <div className="col-span-1 md:col-span-6 gap-4 w-full flex flex-col pr-0">
+              <Update />
+              <Work />
+            </div>
           </div>
         </div>
       </Container>

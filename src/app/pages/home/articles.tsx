@@ -2,7 +2,7 @@
 
 export default function Articles() {
   return (
-    <div className="flex flex-col place-content-between h-full">
+    <div className="flex flex-col place-content-between h-full border border-white/10 rounded-2xl">
       <div className="card hover:bg-white/5 p-6 rounded-xl gap-2 flex flex-col">
         <p className="pl-4 text-sm border-l-1 mb-2 border-white/60 text-white/30">August 03, 2025</p>
         <h1 className="text-base font-semibold">Crafting a design system for a multiplanetary future</h1>
