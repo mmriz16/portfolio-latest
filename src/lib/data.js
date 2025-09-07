@@ -1,5 +1,5 @@
 // lib/data.js
-export let articles = [
+export const articles = [
   {
     id: 1,
     title: 'Belajar Next.js App Router',
