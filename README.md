@@ -18,18 +18,22 @@ A modern, responsive portfolio website built with Next.js 15, TypeScript, and Ta
 
 - **Framework**: Next.js 15 with App Router
 - **Language**: TypeScript
+- **Database**: Prisma ORM with PostgreSQL
 - **Styling**: Tailwind CSS 4
 - **Icons**: Boxicons
 - **Fonts**: Geist Sans & Geist Mono
 - **Smooth Scrolling**: Lenis
 - **Analytics**: Vercel Analytics
 - **Development**: Turbopack for faster builds
+- **API**: RESTful API routes with Next.js
 
 ## 📁 Project Structure
 
 ```
 src/
 ├── app/
+│   ├── api/                 # API routes
+│   │   └── articles/        # Articles API endpoints
 │   ├── components/          # Reusable UI components
 │   │   ├── container.tsx     # Layout container
 │   │   ├── navbar.tsx        # Navigation component
@@ -43,13 +47,19 @@ src/
 │   │   │   ├── articles.tsx # Articles preview
 │   │   │   ├── update.tsx   # Personal updates
 │   │   │   └── work.tsx     # Work experience
-│   │   ├── about/           # About page
+│   │   ├── abouts/          # About page
 │   │   ├── articles/        # Articles section
 │   │   ├── project/         # Projects section
 │   │   └── uses/            # Tools and setup
 │   ├── globals.css          # Global styles
 │   ├── layout.tsx           # Root layout
 │   └── page.tsx             # Homepage
+├── lib/                     # Utility libraries
+│   ├── prisma.js            # Prisma client configuration
+│   └── data.js              # Static data
+prisma/
+├── migrations/              # Database migrations
+└── schema.prisma            # Database schema
 public/
 ├── img/                     # Profile and company images
 └── project/                 # Project screenshots
@@ -68,12 +78,24 @@ public/
    npm install
    ```
 
-3. **Run the development server**
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env.local
+   # Edit .env.local with your database URL and other configurations
+   ```
+
+4. **Set up the database**
+   ```bash
+   npx prisma migrate dev
+   npx prisma generate
+   ```
+
+5. **Run the development server**
    ```bash
    npm run dev
    ```
 
-4. **Open your browser**
+6. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📜 Available Scripts
@@ -84,6 +106,34 @@ public/
 - `npm run lint` - Run ESLint
 - `npm run lint:fix` - Fix ESLint issues automatically
 - `npm run lint:check` - Check for linting issues with zero warnings
+- `npm run postinstall` - Generate Prisma client (runs automatically)
+
+## 🗄️ Database & API
+
+### Database Schema
+The project uses Prisma ORM with the following main models:
+- **Articles**: Blog posts and articles
+- **Projects**: Portfolio projects
+- **Work Experience**: Professional background
+
+### API Endpoints
+- `GET /api/articles` - Fetch all articles
+- `GET /api/articles/[id]` - Fetch specific article
+
+### Database Commands
+```bash
+# Reset database
+npx prisma migrate reset
+
+# Deploy migrations
+npx prisma migrate deploy
+
+# Open Prisma Studio
+npx prisma studio
+
+# Generate Prisma client
+npx prisma generate
+```
 
 ## 🎨 Customization
 
@@ -100,7 +150,7 @@ public/
 ### Content Updates
 - **Hero Section**: Edit `src/app/pages/home/hero.tsx`
 - **Projects**: Update `src/app/pages/home/project.tsx`
-- **About**: Modify `src/app/pages/about/page.tsx`
+- **About**: Modify `src/app/pages/abouts/page.tsx`
 - **Work Experience**: Edit `src/app/pages/home/work.tsx`
 
 ## 📱 Responsive Design
@@ -114,15 +164,31 @@ The portfolio is fully responsive with breakpoints:
 
 This project is optimized for deployment on Vercel:
 
-1. **Deploy to Vercel**
+### Prerequisites
+1. Set up your database (PostgreSQL recommended)
+2. Configure environment variables in Vercel dashboard
+3. Ensure `postinstall` script is in package.json (already configured)
+
+### Deploy to Vercel
+1. **Connect your repository to Vercel**
+2. **Set environment variables**:
+   - `DATABASE_URL`: Your PostgreSQL connection string
+   - Other environment variables as needed
+
+3. **Deploy**
    ```bash
    npm run build
    ```
 
-2. **Or use Vercel CLI**
+4. **Or use Vercel CLI**
    ```bash
    vercel --prod
    ```
+
+### Important Notes
+- The `postinstall` script automatically runs `prisma generate` during deployment
+- This fixes Prisma Client caching issues on Vercel
+- Database migrations should be run manually or via CI/CD
 
 ## 📊 Performance
 
