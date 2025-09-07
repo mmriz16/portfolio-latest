@@ -1,0 +1,32 @@
+// File: prisma/schema.prisma
+
+// Langkah 1: Memberi tahu Prisma jenis database yang kita pakai
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+// Langkah 2: Memberi tahu Prisma cara membuat "kurir" untuk kode kita
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Langkah 3: Membuat aturan/blueprint untuk "Lemari Artikel"
+model Article {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  imageUrl    String
+  createdAt   DateTime @default(now())
+}
+
+// Langkah 4: Membuat aturan/blueprint untuk "Lemari Project"
+model Project {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  imageUrl    String
+  link        String?  // Tanda tanya (?) berarti field ini tidak wajib diisi
+  createdAt   DateTime @default(now())
+}

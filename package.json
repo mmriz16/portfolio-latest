@@ -11,6 +11,7 @@
     "lint:check": "next lint --max-warnings 0"
   },
   "dependencies": {
+    "@prisma/client": "^6.15.0",
     "@supabase/supabase-js": "^2.57.0",
     "@vercel/analytics": "^1.5.0",
     "boxicons": "^2.1.4",
@@ -27,6 +28,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
+    "prisma": "^6.15.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
