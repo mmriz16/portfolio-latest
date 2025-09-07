@@ -12,7 +12,6 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// Langkah 3: Membuat aturan/blueprint untuk "Lemari Artikel"
 model Article {
   id          Int      @id @default(autoincrement())
   title       String
@@ -21,12 +20,28 @@ model Article {
   createdAt   DateTime @default(now())
 }
 
-// Langkah 4: Membuat aturan/blueprint untuk "Lemari Project"
-model Project {
+model Portfolio {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  imageUrl    String
+  category    String
+  link        String?  // Tanda tanya (?) berarti field ini tidak wajib diisi
+  createdAt   DateTime @default(now())
+}
+
+model Personal {
   id          Int      @id @default(autoincrement())
   title       String
   description String
   imageUrl    String
   link        String?  // Tanda tanya (?) berarti field ini tidak wajib diisi
+  createdAt   DateTime @default(now())
+}
+
+model Uses {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
   createdAt   DateTime @default(now())
 }
