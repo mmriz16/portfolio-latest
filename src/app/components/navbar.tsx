@@ -14,9 +14,9 @@ export default function Navbar() {
       </div>
       <div className="p-1 rounded-xl bg-black/10 w-fit border border-white/10 backdrop-blur-xl hidden md:flex justify-center">
         <ul className="flex gap-1 text-sm items-center text-white/50">
-          <Link href="/pages/about"><li className={`hover:text-white hover:bg-white/10 rounded-lg p-3 hover:cursor-pointer ${pathname === '/pages/about' ? 'text-white bg-white/10' : ''}`}>About</li></Link>
-          <Link href="/pages/articles/list"><li className={`hover:text-white hover:bg-white/10 rounded-lg p-3 hover:cursor-pointer ${pathname.startsWith('/pages/articles') ? 'text-white bg-white/10' : ''}`}>Article</li></Link>
-          <Link href="/pages/project/list"><li className={`hover:text-white hover:bg-white/10 rounded-lg p-3 hover:cursor-pointer ${pathname.startsWith('/pages/project') ? 'text-white bg-white/10' : ''}`}>Projects</li></Link>
+          <Link href="/pages/abouts"><li className={`hover:text-white hover:bg-white/10 rounded-lg p-3 hover:cursor-pointer ${pathname === '/pages/about' ? 'text-white bg-white/10' : ''}`}>About</li></Link>
+          <Link href="/pages/articles"><li className={`hover:text-white hover:bg-white/10 rounded-lg p-3 hover:cursor-pointer ${pathname.startsWith('/pages/articles') ? 'text-white bg-white/10' : ''}`}>Article</li></Link>
+          <Link href="/pages/project"><li className={`hover:text-white hover:bg-white/10 rounded-lg p-3 hover:cursor-pointer ${pathname.startsWith('/pages/project') ? 'text-white bg-white/10' : ''}`}>Projects</li></Link>
           <Link href="/pages/uses"><li className={`hover:text-white hover:bg-white/10 rounded-lg p-3 hover:cursor-pointer ${pathname === '/pages/uses' ? 'text-white bg-white/10' : ''}`}>Uses</li></Link>
         </ul>
       </div>

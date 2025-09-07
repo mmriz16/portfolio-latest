@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Container from '../../../components/container';
-import InnerCard from '../../../components/innerCard';
-import Navbar from '../../../components/navbar';
-import Footer from '../../../components/footer';
-import OuterCard from '../../../components/outerCard';
+import Container from '../../components/container';
+import InnerCard from '../../components/innerCard';
+import Navbar from '../../components/navbar';
+import Footer from '../../components/footer';
+import OuterCard from '../../components/outerCard';
 
 
 export default function Projects() {
