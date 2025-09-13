@@ -7,9 +7,7 @@ module.exports = {
   changefreq: 'weekly',
   priority: 0.7,
   exclude: ['/api/*'],
-  additionalPaths: async (config) => [
-    await config.transform(config, '/mmriz16'),
-  ],
+  additionalPaths: async (config) => [],
   robotsTxtOptions: {
     policies: [
       {

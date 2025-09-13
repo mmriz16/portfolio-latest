@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'mmriz16 | Miftakhul Rizky — UI/UX Designer',
-  description: 'mmriz16. Miftakhul Rizky, UI/UX Designer and icon designer. Founder Termicons. Contact: m.miftakhul.rizky4@gmail.com',
-  keywords: ['mmriz16', 'Miftakhul Rizky', 'UI/UX', 'Icon Designer', 'Termicons', 'Designer', 'Portfolio'],
+  title: 'Miftakhul Rizky — UI/UX Designer & Icon Designer',
+  description: 'Miftakhul Rizky, UI/UX Designer and icon designer. Founder Termicons. Creating intuitive digital experiences and beautiful iconography. Contact: m.miftakhul.rizky4@gmail.com',
+  keywords: ['Miftakhul Rizky', 'UI/UX Designer', 'Icon Designer', 'Termicons', 'Designer', 'Portfolio', 'mmriz16'],
   authors: [{ name: 'Miftakhul Rizky', url: 'https://me.termicons.com' }],
-  creator: 'mmriz16',
+  creator: 'Miftakhul Rizky',
   publisher: 'Miftakhul Rizky',
   metadataBase: new URL('https://me.termicons.com'),
   alternates: {
@@ -31,22 +31,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://me.termicons.com',
-    title: 'mmriz16 | Miftakhul Rizky — UI/UX Designer',
-    description: 'mmriz16. Miftakhul Rizky, UI/UX Designer and icon designer. Founder Termicons. Contact: m.miftakhul.rizky4@gmail.com',
-    siteName: 'mmriz16 Portfolio',
+    title: 'Miftakhul Rizky — UI/UX Designer & Icon Designer',
+    description: 'Miftakhul Rizky, UI/UX Designer and icon designer. Founder Termicons. Creating intuitive digital experiences and beautiful iconography.',
+    siteName: 'Miftakhul Rizky Portfolio',
     images: [
       {
         url: '/img/profile.jpg',
         width: 1200,
         height: 630,
-        alt: 'mmriz16 - Miftakhul Rizky Profile',
+        alt: 'Miftakhul Rizky - UI/UX Designer Profile',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'mmriz16 | Miftakhul Rizky — UI/UX Designer',
-    description: 'mmriz16. Miftakhul Rizky, UI/UX Designer and icon designer. Founder Termicons.',
+    title: 'Miftakhul Rizky — UI/UX Designer & Icon Designer',
+    description: 'Miftakhul Rizky, UI/UX Designer and icon designer. Founder Termicons.',
     images: ['/img/profile.jpg'],
     creator: '@mmriz16',
   },
@@ -78,20 +78,21 @@ export default function RootLayout({
     alternateName: 'mmriz16',
     url: 'https://me.termicons.com',
     image: 'https://me.termicons.com/img/profile.jpg',
-    jobTitle: 'UI/UX Designer',
+    jobTitle: 'UI/UX Designer & Icon Designer',
     worksFor: {
       '@type': 'Organization',
       name: 'Termicons',
     },
     sameAs: [
-      'https://www.instagram.com/mmriz16',
       'https://dribbble.com/mmriz16',
+      'https://www.behance.net/mmriz16',
+      'https://www.instagram.com/mmriz16',
       'https://thenounproject.com/mmriz16',
       'https://www.linkedin.com/in/mmriz16',
-      'https://github.com/mmriz16',
     ],
     email: 'm.miftakhul.rizky4@gmail.com',
-    knowsAbout: ['UI/UX Design', 'Icon Design', 'Web Design', 'Mobile Design'],
+    knowsAbout: ['UI/UX Design', 'Icon Design', 'Web Design', 'Mobile Design', 'Digital Design'],
+    description: 'UI/UX Designer and Icon Designer, Founder of Termicons. Creating intuitive digital experiences and beautiful iconography.',
   };
 
   return (
