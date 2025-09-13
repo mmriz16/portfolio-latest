@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://me.termicons.com
+
+# Sitemaps
+Sitemap: https://me.termicons.com/sitemap.xml
