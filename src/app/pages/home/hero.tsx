@@ -7,7 +7,6 @@ export default function Hero() {
       <div className="grid grid-flow-row auto-rows-max gap-4 md:gap-7 md:mx-6 md:px-0 mt-24 md:mt-24">
         <div className="col-span-8">
           <h1 id='title' className="text-[36px] md:text-5xl font-bold leading-[1.1]">
-            <span className="bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">Miftakhul Rizky</span><br/>
             UI/UX Designer, Icon Designer, and Founder.
           </h1>
         </div>
