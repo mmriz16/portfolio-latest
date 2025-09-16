@@ -12,7 +12,7 @@ export default function Work() {
         <div className="flex gap-2 justify-between items-center">
           <div className="flex gap-3 items-center">
             <div className="col-span-2 w-[40] h-[40px] rounded-full flex items-center justify-center bg-white/10">
-              <Image src="/img/Siesta.png" alt="Company logo" width={32} height={32} />
+              <Image src="/img/Siesta.png" alt="Company logo" width={32} height={32} unoptimized={true} quality={100} />
             </div>
             <div className="col-span-6 w-[200px]">
               <h1 className="text-white font-semibold">UI/UX Designer</h1>
@@ -24,7 +24,7 @@ export default function Work() {
         <div className="flex gap-2 justify-between items-center">
           <div className="flex gap-3 items-center">
             <div className="col-span-2 w-[40] h-[40px] rounded-full flex items-center justify-center bg-white/10">
-              <Image src="/img/Aghatis.png" alt="Company logo" width={32} height={32} />
+              <Image src="/img/Aghatis.png" alt="Company logo" width={32} height={32} unoptimized={true} quality={100} />
             </div>
             <div className="col-span-6">
               <h1 className="text-white font-semibold">UI/UX Designer</h1>
@@ -36,7 +36,7 @@ export default function Work() {
         <div className="flex gap-2 justify-between items-center">
           <div className="flex gap-3 items-center">
             <div className="col-span-2 w-[40] h-[40px] rounded-full flex items-center justify-center bg-white/10">
-              <Image src="/img/DGT.png" alt="Company logo" width={32} height={32} />
+              <Image src="/img/DGT.png" alt="Company logo" width={32} height={32} unoptimized={true} quality={100} />
             </div>
             <div className="col-span-6">
               <h1 className="text-white font-semibold">Graphic & UI/UX Designer</h1>
@@ -48,7 +48,7 @@ export default function Work() {
         <div className="flex gap-2 justify-between items-center">
           <div className="flex gap-3 items-center">
             <div className="col-span-2 w-[40] h-[40px] rounded-full flex items-center justify-center bg-white/10">
-              <Image src="/img/DGT.png" alt="Company logo" width={32} height={32} />
+              <Image src="/img/stmik-bandung.png" alt="Company logo" width={32} height={32} unoptimized={true} quality={100} />
             </div>
             <div className="col-span-6">
               <h1 className="text-white font-semibold">Graphic Designer</h1>

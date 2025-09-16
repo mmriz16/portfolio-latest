@@ -33,7 +33,7 @@ export default function Articles() {
             </div>
           </div>
           <div>
-            <Image className='rounded-2xl rotate-2 overflow-hidden relative -z-10' src="/img/me.jpg" alt="profile" width={460} height={100} />
+            <Image className='rounded-2xl rotate-2 overflow-hidden relative -z-10' src="/img/me.jpg" alt="profile" width={460} height={100} unoptimized={true} quality={100} />
             <ul className='flex gap-2 mt-12'>
               <li className='text-sm p-4 border border-white/10 rounded-xl hover:cursor-pointer hover:bg-white/10 hover:border-white/0'>Github</li>
               <li className='text-sm p-4 border border-white/10 rounded-xl hover:cursor-pointer hover:bg-white/10 hover:border-white/0'>Linkedin</li>
